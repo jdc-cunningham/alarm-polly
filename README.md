@@ -1,7 +1,14 @@
 # alarm-polly
 Schedule alarms with a message and news, weather forecast to be read allowed with AWS Polly through Raspberry Pi
 
+## Video demo
+https://www.youtube.com/watch?v=CqU3jfzUy6c
+
+## Interface screenshots
+![alt text](https://cdn-images-1.medium.com/max/800/1*Dre6aa81R28AiHDNu-Jgtw.png)
+
 ## Details on how this works:
+https://medium.com/@jdc_cunningham/alarm-polly-create-your-own-alarm-messages-with-aws-polly-and-raspberry-pi-8af6d3c0d411
 
 ## Dependencies and requirements
 This assumes you're running a LAMP stack on your Raspberry Pi and have an AWS account to use AWS Polly
