@@ -1,0 +1,188 @@
+#set-alarm-form {
+    position: relative;
+    width: 500px;
+    min-height: 460px;
+    height: auto;
+    border: 2px solid #dcdcdc;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-family: monospace;
+    background-color: #1c6e8c;
+}
+@media (max-width: 600px) {
+    #set-alarm-form {
+        width: 90%;
+    }
+    #tpl-text {
+        width: 55% !important;
+    }
+    #tpl-recurring {
+        width: 25% !important;
+    }
+    /* fonts */
+    .tpl-text  {
+        font-size: 16px !important;
+    }
+    .tpfpd-label {
+        font-size: 14px !important;
+    }
+    .pick-date-select {
+        width: 74px !important;
+    }
+    #se-submit {
+        font-size: 16px !important;
+    }
+    #tpf-pick-date, #tpf-pick-time {
+        justify-content: flex-start !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    .tpfpd-label {
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
+    /* hide alarm button */
+    #hide-alarm-form {
+        top: -15px;
+        right: -15px;
+    }
+    #haf-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+    #time-picker {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+        #tp-label {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+            #tpl-text, #tpl-recurring {
+                position: relative;
+                width: 40%;
+                height: auto;
+                padding: 10px 5%;
+                color: white;
+                font-size: 20px;
+            }
+                #tplr-checkbox {
+                    margin: 0;
+                    margin-left: 10px;
+                }
+        #tp-form {
+            width: 90%;
+            padding: 10px 5%;
+            /* border: 1px solid #fff; */
+        }
+            #tpf-pick-date, #tpf-pick-time {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+            .tpfpd-label {
+                position: relative;
+                flex: 2;
+                height: auto;
+                padding: 10px 0;
+                color: white;
+                font-size: 18px;
+                margin-right: 5px;
+            }
+            .tpfpd-options {
+                position: relative;
+                flex: 3;
+            }
+                .pick-date-select {
+                    position: relative;
+                    width: 80px;
+                    height: auto;
+                    background-color: transparent;
+                    color: white;
+                    padding: 10px;
+                    margin: 5px;
+                    border-color: white;
+                    border-radius: 3px;
+                    /* for firefox hides arrow, can't seem to change background of arrow, need to use an image */
+                    /* -moz-appearance: none;
+                    -webkit-appearance: none; */
+                }
+                option {
+                    background-color: #1c6e8c;
+                }
+                #tpfpd-year, #tpfpd-period {
+                    margin-right: 0;
+                }
+    #alarm-settings {
+        position: relative;
+        width: 90%;
+        padding: 0 5%;
+    }
+        #as-form {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }   
+        input, textarea {
+            font-size: 16px;
+        }
+            #as-article-source, #as-message-field {
+                position: relative;
+                width: auto;
+                height: auto;
+                padding: 10px;
+                box-sizing: border-box;
+                background-color: transparent;
+                color: white;
+                border: 1px solid white;
+            }
+            #as-message-field {
+                width: 100%;
+                height: 100px;
+                overflow-y: auto;
+                margin-top: 10px;
+            }
+            #as-article-source::-webkit-input-placeholder, #as-message-field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: white;
+            }
+            #as-article-source::-moz-placeholder, #as-message-field::-moz-placeholder { /* Firefox 19+ */
+                color: white;
+            }
+            #as-article-source:-ms-input-placeholder, #as-message-field:-ms-input-placeholder { /* IE 10+ */
+                color: white;
+            }
+            #as-article-source:-moz-placeholder, #as-message-field:-moz-placeholder { /* Firefox 18- */
+                color: white;
+            }
+            #set-article-source {
+                width: 100%;
+                color: white;
+            }
+                #sas-text {
+                    color: white;
+                    flex: 4;
+                }
+                #as-article-source {
+                    flex: 5;
+                }
+    #set-alarm {
+        position: relative;
+        width: 100%;
+        margin: 10px 0;
+    }
+        #sa-submit {
+            background-color: white;
+            border: transparent;
+            color: #1c6e8c;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 10px;
+        }
+        #sa-submit:hover {
+            background-color: #802c5a;
+            color:  white;
+        }

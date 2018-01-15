@@ -1,0 +1,96 @@
+#main-container {
+    position: relative;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-image: -moz-linear-gradient(60deg, #1c6e8c 0%, #196480 100%);
+    background-image: -webkit-linear-gradient(60deg, #1c6e8c 0%, #196480 100%);
+    background-image: -ms-linear-gradient(60deg, #1c6e8c 0%, #196480 100%);
+    font-family: monospace;
+}
+#select-day {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+    #sd-today {
+        position: relative;
+        width: auto;
+        height: auto;
+        color: white;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 36px;
+        margin-top: 30px;
+    }
+    #sd-week-days {
+        margin-top: 30px;
+    }
+    .sdwd-tile {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: white;
+        color: #1c6e8c;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 24px;
+    }
+        .inactive-day-tile {
+            background-color: #aaa;
+            color: white;
+        }
+        .active-day-tile, .sdwd-tile:hover {
+            background-color: #e06377;
+            color: white;
+        }
+#alarms-display {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    margin-top: 30px;
+    color: white;
+}
+    .set-alarm {
+        font-size: 20px;
+        color: white;
+    }
+#setalarm-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow-y: auto;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/bg-282828-100x100-60.png');
+    background-size: 100px 100px;
+    background-repeat: repeat;
+}
+    #hide-alarm-form {
+        position: absolute;
+        top: -25px;
+        right: -25px;
+        z-index: 2;
+        cursor: pointer;
+    }
+/* checking for alarms section */
+.scheduled-alarm-container {
+    position: relative;
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    margin-top: 15px;
+    border: 2px solid #e06377;
+    color: white;
+    border-radius: 6px;
+    font-size: 22px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Alarm Polly</title>
+        <link rel="stylesheet" type="text/css" href="css/css-reset.css">
+        <link rel="stylesheet" type="text/css" href="css/flex-set.css">
+        <link rel="stylesheet" type="text/css" href="css/setalarm-popup.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    </head>
+    <body>
+        <div id="main-container" class="flex fct fdc">
+            <div id="select-day" class="flex fcc fdc">
+                <div id="sd-today" class="flex fcc"></div>
+                <div id="sd-week-days" class="flex fcc fdr"></div>
+            </div>
+            <div id="alarms-display" class="flex fcc fdc">
+                <div class="flex fcc set-alarm">checking for alarms...</div>
+            </div>
+        </div>
+        <div id="setalarm-popup" class="flex fcc fdc" style="display: none;">
+            <div id="set-alarm-form" class="flex fcc fdc">
+                <div id="hide-alarm-form" class="flex fcc">
+                    <img src="./assets/red-x-btn-circle-30x30.png" id="haf-icon" width="50px" height="50px" title="close">
+                </div>
+                <div id="time-picker" class="flex fcc fdc">
+                    <div id="tp-label" class="flex fcc fdr">
+                        <div id="tpl-text" class="flex flc tpl-text">Set Alarm</div>
+                        <div id="tpl-recurring" class="flex frc fdr">
+                            <div class="flex fcc tpl-text" style="display: none;">
+                                Recurring
+                            </div>
+                            <input type="checkbox" id="tplr-checkbox" style="display: none;">
+                        </div>
+                    </div>
+                    <form id="tp-form" class="flex fcc fdc">
+                        <div id="tpf-pick-date" class="flex fcc fdr">
+                            <div class="flex flc tpfpd-label">
+                                Pick a date
+                            </div>
+                            <div class="flex fcc fdr tpfpd-options">
+                                <select name="month" id="tpfpd-month" class="flex fcc pick-date-select">
+                                    <!-- fill in with loop, but initiate today -->
+                                </select>
+                                <select name="day" id="tpfpd-day" class="flex fcc  pick-date-select">
+                                    <!-- fill in with loop, but initiate today -->
+                                </select>
+                                <select name="year" id="tpfpd-year" class="flex fcc pick-date-select">
+                                    <!-- fill in with loop, but initiate today -->
+                                </select>
+                            </div>
+                        </div>
+                        <div id="tpf-pick-time" class="flex fcc fdr" class="flex fcc pick-date-select">
+                            <div class="flex flc tpfpd-label">
+                                Pick a time
+                            </div>
+                            <div class="flex fcc fdr tpfpd-options">
+                                <select name="hour" id="tpfpd-hour" class="pick-date-select">
+                                    <!-- fill in with loop, but initiate today -->
+                                </select>
+                                <select name="minute" id="tpfpd-minute" class="flex fcc pick-date-select">
+                                    <!-- fill in with loop, but initiate today -->
+                                </select>
+                                <select name="period" id="tpfpd-period" class="flex fcc pick-date-select">
+                                    <!-- fill in with loop, but initiate today -->
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="alarm-settings" class="flex fcc fdc">
+                    <form id="as-form" class="flex fcc fdc">
+                        <div id="set-article-source" class="flex fcc fdr">
+                            <div id="sas-text" class="flex flc">
+                                Select article source
+                            </div>
+                            <select name="article-source" id="as-article-source">
+                                <option value="news-api">News API</option>
+                            </select>
+                        </div>
+                        <textarea id="as-message-field" placeholder="Special reminder"></textarea>
+                    </form>
+                </div>
+                <div id="set-alarm" class="flex fcc">
+                    <button id="sa-submit" type="button">Set Alarm</button>
+                </div>
+            </div>
+        </div>
+        <script src="js/date-builder.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

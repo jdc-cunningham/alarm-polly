@@ -1,0 +1,29 @@
+.flex {
+    display: flex;
+}
+    .fcc {
+        justify-content: center; /* x-axis */
+        align-items: center; /* y-axis */
+    }
+    .flc {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .frc {
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .fct {
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .flt {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .fdr {
+        flex-direction: row;
+    }
+    .fdc {
+        flex-direction: column;
+    }
