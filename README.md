@@ -20,6 +20,6 @@ This assumes you're running a LAMP stack on your Raspberry Pi and have an AWS ac
 
 ## Note
 
-Even if you have a Pi Zero you can do this, provided you have some spare parts. I myself am using a Pi Zero to run this. You have to build a little filter and use the tutorial provided here by Adafruit.
+Even if you have a Pi Zero you can do this, provided you have some spare parts. Namely: a couple of resistors, capacitor and a film capacitor. I myself am using a Pi Zero to run this. You have to build a little filter and use the tutorial provided here by Adafruit.
 https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio
 
