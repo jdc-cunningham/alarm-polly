@@ -25,6 +25,15 @@ This assumes you're running a LAMP stack on your Raspberry Pi and have an AWS ac
 * Yahoo Weather API - need to provide your city and state
 * News API - you need to sign up and get a key (free)
 
+## Setting it up on your Pi
+The medium post goes over most of the instructions, this assumes you're able to use a terminal/know what LAMP/python/pip/pygame/aws are.
+
+The directory paths are:
+```/home/pi/alarmPolly```
+```/var/www/html/alarm-polly```
+
+The ```check-alarm.php``` script is what CRON runs every minute.
+
 ## Note
 
 Even if you have a Pi Zero you can do this, provided you have some spare parts. Namely: a couple of resistors, capacitor and a film capacitor. I myself am using a Pi Zero to run this. You have to build a little filter and use the tutorial provided here by Adafruit.
