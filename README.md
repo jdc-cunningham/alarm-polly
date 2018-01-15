@@ -30,9 +30,9 @@ The medium post goes over most of the instructions, this assumes you're able to 
 
 The directory paths are:
 
-```/home/pi/alarmPolly```
+```/home/pi/alarmPolly``` (back end)
 
-```/var/www/html/alarm-polly```
+```/var/www/html/alarm-polly``` (front end)
 
 
 The ```check-alarm.php``` script is what CRON runs every minute.
