@@ -29,8 +29,11 @@ This assumes you're running a LAMP stack on your Raspberry Pi and have an AWS ac
 The medium post goes over most of the instructions, this assumes you're able to use a terminal/know what LAMP/python/pip/pygame/aws are.
 
 The directory paths are:
+
 ```/home/pi/alarmPolly```
+
 ```/var/www/html/alarm-polly```
+
 
 The ```check-alarm.php``` script is what CRON runs every minute.
 
