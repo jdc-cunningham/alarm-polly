@@ -24,7 +24,7 @@
             }
         }
         else {
-            unlink('/var/www/html/alarm-polly/php/state-file.txt');
+            # unlink('/var/www/html/alarm-polly/php/state-file.txt');
         }
     }
 
