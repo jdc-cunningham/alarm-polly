@@ -23,9 +23,6 @@ def synthesize_text(file_name,text):
 
     CHUNK_SIZE = 1024
 
-    import pygame
-    pygame.mixer.init()
-
     while True:
       # stream data
       data = data_stream.read(CHUNK_SIZE)
