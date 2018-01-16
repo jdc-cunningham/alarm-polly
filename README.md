@@ -35,7 +35,11 @@ The directory paths are:
 ```/var/www/html/alarm-polly``` (front end)
 
 
-The ```check-alarm.php``` script is what CRON runs every minute.
+The two scripts that run alarm polly are ran by CRON every minute in sequence like this:
+
+```check scheduled alarms```
+
+```* * * * * /usr/bin/php /var/www/html/alarm-polly/php/check-alarm.php && /usr/bin/python /home/pi/alarmPolly/get-articles-parse-synth.py```
 
 ## Note
 
