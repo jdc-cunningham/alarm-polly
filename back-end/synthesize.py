@@ -1,6 +1,9 @@
 from boto3 import Session
 session = Session(profile_name="adminuser")
 polly = session.client("polly")
+import sys  
+reload(sys)  
+sys.setdefaultencoding('utf8')
 
 def synthesize_text(file_name,text):
 
@@ -12,7 +15,7 @@ def synthesize_text(file_name,text):
         trunc_len = 1482
         text = text[:trunc_len] + ' content truncated'
 
-    text = text.encode('utf-8')
+    # text = text.encode('utf-8')
     voiceID = "Nicole"
     outputFormat = "mp3"
     response = polly.synthesize_speech(Text=text,VoiceId=voiceID,OutputFormat=outputFormat)
