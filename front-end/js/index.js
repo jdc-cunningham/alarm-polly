@@ -141,10 +141,20 @@ function checkDateTime(inpSelDateTime) {
     
 }
 
+// change 00 to 12
+function correctBaseHour(inpHour) {
+    if (inpHour == '00') {
+        return 12;
+    }
+    else {
+        return inpHour;
+    }
+}
+
 // set alarm listener
 btnSetAlarm.addEventListener('click', function() {
     // get data
-    const timeString = (pickDateMonth.value + pickDateDay.value + pickDateYear.value + pickDateHour.value + pickDateMinute.value + pickDatePeriod.value),
+    const timeString = (pickDateMonth.value + pickDateDay.value + pickDateYear.value + correctBaseHour(pickDateHour.value) + pickDateMinute.value + pickDatePeriod.value),
         articleSource = document.querySelector("#as-article-source").value,
         specialMessage = document.querySelector('#as-message-field').value;
 
@@ -160,7 +170,7 @@ btnSetAlarm.addEventListener('click', function() {
 
     modSelHour =  parseInt(hourPeriodCorrection) + parseInt(pickDateHour.value);
 
-    timeStringAltFormat = pickDateYear.value + '-' + pickDateMonth.value + '-' + pickDateDay.value + ' ' + modSelHour + ':' + pickDateMinute.value;
+    timeStringAltFormat = pickDateYear.value + '-' + pickDateMonth.value + '-' + pickDateDay.value + ' ' + correctBaseHour(modSelHour) + ':' + pickDateMinute.value;
     console.log(timeStringAltFormat);
 
     if (!checkDateTime(timeStringAltFormat)) {
