@@ -24,7 +24,10 @@
             }
         }
         else {
-            # unlink('/var/www/html/alarm-polly/php/state-file.txt');
+            $file_path = '/var/www/html/alarm-polly/php/state-file.txt';
+            if (file_exists($file_path)) {
+                unlink($file_path);
+            }
         }
     }
 
