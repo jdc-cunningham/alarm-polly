@@ -109,7 +109,7 @@ function checkDateTime(inpSelDateTime) {
         return nd.toLocaleString();
     }
 
-    let curLocaleTime = calcTime('Chicago', '+6'), // sample output 1/15/2018, 2:14:12 PM
+    let curLocaleTime = calcTime('Chicago', '+5'), // sample output 1/15/2018, 2:14:12 PM
         clt = curLocaleTime,
         cltDate = clt.split(',')[0].split('/'),
         cltYear = cltDate[2],
