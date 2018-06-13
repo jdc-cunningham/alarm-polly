@@ -19,6 +19,9 @@ This assumes you're running a LAMP stack on your Raspberry Pi and have an AWS ac
 * Pygame
 * AWS CLI - you have an AWS account such as the free tier
   * create an IAM user to authenticate against AWS Polly
+  
+## Important
+In the ```index.js``` file under ```alarm-polly/front-end/js/``` be sure to set line ```112``` correctly regarding the ```curLocaleTime``` variable. Just search for ```Chicago``` in the code. It's default set to +5 which works for me in Central Time. Your time may be different and you'll get a false alert that says "Please select a future date".
 
 ## Other things used by this code
 
