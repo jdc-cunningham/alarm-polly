@@ -1,5 +1,5 @@
 # alarm-polly
-Schedule alarms with a message and news, weather forecast to be read allowed with AWS Polly through Raspberry Pi
+Schedule alarms with a message and news, weather forecast to be read aloud with AWS Polly through Raspberry Pi
 
 ## Video demo
 https://www.youtube.com/watch?v=CqU3jfzUy6c
